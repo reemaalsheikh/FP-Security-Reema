@@ -102,8 +102,6 @@ public class Tutor {
     @OneToMany(mappedBy = "tutor", cascade = CascadeType.ALL)
     private Set<Certificate> certificates;
 
-    @OneToMany(mappedBy ="tutor",cascade = CascadeType.ALL  )
-    private Set<ZoomMeeting> zoomMeeting;
 
 
 }
