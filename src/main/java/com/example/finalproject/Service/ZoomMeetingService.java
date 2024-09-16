@@ -41,7 +41,7 @@ public class ZoomMeetingService {
         if (!session.getTutor().getUser().getId().equals(tutor_id)) {
             throw new ApiException("You can only add Zoom meetings to your own sessions.");
         }
-        zoom.setTutor(tutor1);
+    
         zoom.setSession(session);
         zoomRepository.save(zoom);
     }
