@@ -60,10 +60,7 @@ public class ZoomMeeting {
     @JoinColumn(name = "student_id")
     private Student student;
 
-    @ManyToOne
-    @JsonIgnore
-    @JoinColumn(name = "tutor_id")
-    private Tutor tutor;
+
 
 
 }
